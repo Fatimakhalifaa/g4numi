@@ -217,7 +217,7 @@ NumiDataInput::NumiDataInput()
   airhrn =false; // airhrn must be changed before compilation
   vacuumworld=false;
   jCompare = false; // make horns have the same B field;
-  g3Chase = false;
+  g3Chase = true;
   
 if(!vacuumworld && !airhrn){
   hrnmat = 9;   // Al
