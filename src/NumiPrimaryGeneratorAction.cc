@@ -664,8 +664,12 @@ void NumiPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
        G4double sigmax=fND->beamSigmaX;
        G4double sigmay=fND->beamSigmaY;
        
-       x0 = G4RandGauss::shoot(fND->beamPosition[0],sigmax);
-       y0 = G4RandGauss::shoot(fND->beamPosition[1],sigmay);
+       //x0 = G4RandGauss::shoot(fND->beamPosition[0],sigmax); // for gaussian beam x
+       //y0 = G4RandGauss::shoot(fND->beamPosition[1],sigmay); //for gaussian beam y
+
+        x0 = 20*(G4UniformRand() - 0.5)*mm; // for uniform beam x
+        y0 = 20*(G4UniformRand() - 0.5)*mm; //for uniform beam y
+
     }
     
     if (spread > 0)
@@ -708,8 +712,11 @@ void NumiPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
      G4double sigmax=fND->beamSigmaX;
      G4double sigmay=fND->beamSigmaY;
      
-     x0 = G4RandGauss::shoot(fND->beamPosition[0],sigmax);
-     y0 = G4RandGauss::shoot(fND->beamPosition[1],sigmay);
+     //x0 = G4RandGauss::shoot(fND->beamPosition[0],sigmax); // for gaussian x
+     //y0 = G4RandGauss::shoot(fND->beamPosition[1],sigmay); // for gaussian y
+
+     x0 = 20*(G4UniformRand() - 0.5)*mm; //for uniform x
+     y0 = 20*(G4UniformRand() - 0.5)*mm; //for uniform y 
      z0 = fND->beamPosition[2];
     
      fProtonOrigin   = G4ThreeVector(x0, y0, z0);
