@@ -40,8 +40,8 @@ DO_HORN1_NEW_GEOMETRY = True
 
 BEAM_POSITION_X       = 0      #m
 BEAM_POSITION_Y       = 0      #m
-BEAM_SPOTSIZE_X       = 1.4    #mm (ME!)
-BEAM_SPOTSIZE_Y       = 1.4    #mm (ME!)
+BEAM_SPOTSIZE_X       = 1.5    #mm (ME!)
+BEAM_SPOTSIZE_Y       = 1.5    #mm (ME!)
 
 TARGET_POSITION_X     = 0.0    #cm
 TARGET_POSITION_Y     = 0.0    #cm
